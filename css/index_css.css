@@ -1,0 +1,30 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: open sans-serif;
+}
+body{
+height: 100vh;
+background-color: #000;
+background-image: url(https://i.pinimg.com/236x/da/ea/b8/daeab846d3cd1d2e78e3a0b297b1b6da.jpg);
+background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+background-position: center; /* Para centrar la imagen */
+background-repeat: no-repeat;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+a:hover{
+    color: indianred;
+}
+
+/*HEADER*/
+header{}
