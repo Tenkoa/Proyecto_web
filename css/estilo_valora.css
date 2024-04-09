@@ -1,0 +1,111 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/022/995/637/non_2x/doctor-shakes-hands-with-little-cancer-patient-undergoing-chemotherapy-to-fight-cancer-teenage-boy-with-cancer-lost-his-hair-due-to-radiation-exposure-and-needs-support-of-clinic-staff-and-parents-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+.valora{
+    position: fixed;
+    bottom: -40%;
+    
+    margin: auto;
+    container: 200px;
+    width: -100%;
+}
+.carrusel-container{
+    position: fixed;
+    bottom: -40%;
+    
+    margin: auto;
+    container: 200px;
+    width: -100%;
+}
+
+.carousel-item{
+
+    max-width: 400px;
+    margin: auto;
+    container: 400px;
+    width: 600px;
+    height:600px ;
+    
+}
+
+.carousel-control-next,.carousel-control-prev{
+
+   
+    margin: auto;
+    container: 400px;
+    width: 200px;
+    height:200px ;
+    background-color: aqua;
+    
+}
+.btn-carru{
+    margin: auto;
+    container: 400px;
+    width: 200px;
+    height:200px ;
+    
+}
+
+.navbar{
+
+    position: fixed;
+    left: 1200PX;
+}
+
+.rating {
+    position: fixed;
+    
+    top: 25%;
+    
+}
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .rating input:checked ~ label {
+    color: #ffd700; /* Color de estrella rellena */
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffd700; /* Cambia el color de las estrellas al pasar el ratón */
+  }
+
+.texto1{
+    position: fixed;
+    
+    left: 30%;
+    top: 60%;
+    
+}
+#opina1{
+    width: 400px; /* Ancho del textarea */
+    height: 280px; /* Altura del textarea */
+    padding: 10px; /* Espaciado interno del textarea */
+    border: 1px solid #ccc; /* Borde del textarea */
+    resize: both; /* Permite al usuario redimensionar el textarea */
+}

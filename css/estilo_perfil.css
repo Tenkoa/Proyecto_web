@@ -1,0 +1,35 @@
+
+body{
+   background-image: url(https://storage.googleapis.com/www-saludiario-com/wp-content/uploads/2022/04/5d15a3cb-tumores.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat:no-repeat ;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+
+}
+
+.perfil1{
+
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    color: greenyellow;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    
+}
+
+li:hover{
+     
+    background: blueviolet;
+    box-shadow:0 0 10px #a945c7,0 0 9px #a945c7,0 0 10px #a945c7;
+    transition-delay: 0.3s ;
+}

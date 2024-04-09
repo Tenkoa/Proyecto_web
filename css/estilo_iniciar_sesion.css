@@ -82,4 +82,18 @@ form .username{
     border: 1px solid #ccc;
     margin-bottom: 10px;
 }
-     
+.botones{
+    text-decoration: none;
+    color: green;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color:white;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.botones:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 255, 0.5); /* Agrega una sombra para simular el brillo */
+}
+
+
