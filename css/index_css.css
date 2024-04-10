@@ -1,342 +1,383 @@
 
 * {
 
-  margin: 0;
- 
-  padding: 0;
- 
-  box-sizing: border-box;
- 
-  font-family: open sans-serif;
- 
+ margin: 0;
+
+ padding: 0;
+
+ box-sizing: border-box;
+
+ font-family: open sans-serif;
+
+}
+
+
+
+body {
+
+ height: 100vh;
+
+ background-color: #000;
+
+ background-image: url(https://materiageek.com/wp-content/uploads/2020/04/50-Fondos-de-escritorio-y-fondos-minimalistas-Edicion-2020.jpg);
+
+ background-size: cover;
+
+ background-position: center;
+
+ background-repeat: no-repeat;
+
+}
+
+
+
+li {
+
+ list-style: none;
+
+}
+
+
+
+a {
+
+ text-decoration: none;
+
+ color: #fff;
+
+ font-size: 1rem;
+
+}
+
+
+
+a:hover {
+
+ color: indianred;
+
+}
+
+
+
+/*HEADER*/
+
+header {
+
+ position: relative;
+
+ padding: 0 2rem;
+
+ position: fixed;
+
+}
+
+
+
+.navbar {
+
+ width: 100%;
+
+ height: 60px;
+
+ max-width: 1200px;
+
+ margin: 0 auto;
+
+ display: flex;
+
+ align-items: center;
+
+ justify-content: space-between;
+
+}
+
+
+
+.navbar .logo a {
+
+ font-size: 1.5rem;
+
+ font-weight: bold;
+
+}
+
+
+
+.toggle-checkbox {
+
+ display: none;
+
+}
+
+
+
+.toggle_btn {
+
+ color: #fff;
+
+ font-size: 1.5rem;
+
+ cursor: pointer;
+
+}
+
+
+
+.toggle_btn i {
+
+ cursor: pointer;
+
+}
+
+
+
+.dropdown_menu {
+
+ display: none;
+
+ position: absolute;
+
+ top: 60px;
+
+ right: 2rem;
+
+ width: 200px;
+
+ background: rgba(255, 255, 255, 0.1);
+
+ backdrop-filter: blur(15px);
+
+ border-radius: 10px;
+
+ overflow: hidden;
+
+}
+
+
+
+.toggle-checkbox:checked ~ .dropdown_menu {
+
+ display: block;
+
+}
+
+
+
+.dropdown_menu li {
+
+ padding: 0.7rem;
+
+ display: flex;
+
+ align-items: center;
+
+ justify-content: center;
+
+}
+
+
+
+.home_a{
+
+
+
+ color: #000;
+
+}
+
+.ong_a{
+
+ color: #000;
+
+}
+
+.mej_a{
+
+ color: #000;
+
+
+
+}
+
+.cal_a{
+
+ color: #000;
+
+}
+
+
+
+.dropdown_menu .action_btn {
+
+ width: 100%;
+
+ display: flex;
+
+ justify-content: center;
+
+ color: #000;
+
+}
+
+
+
+/* Responsivo */
+
+@media(max-width: 992px) {
+
+ .navbar .logo {
+
+   flex: 1;
+
  }
- 
- 
- 
- body {
- 
-  height: 100vh;
- 
-  background-color: #000;
- 
-  background-image: url(https://materiageek.com/wp-content/uploads/2020/04/50-Fondos-de-escritorio-y-fondos-minimalistas-Edicion-2020.jpg);
- 
-  background-size: cover;
- 
-  background-position: center;
- 
-  background-repeat: no-repeat;
- 
+
+
+
+ .navbar .links,
+
+ .action_btn {
+
+   display: none;
+
  }
- 
- 
- 
- li {
- 
-  list-style: none;
- 
+
+
+
+ .toggle-checkbox:checked ~ .toggle_btn {
+
+   color: #fff;
+
  }
- 
- 
- 
- a {
- 
-  text-decoration: none;
- 
-  color: #fff;
- 
-  font-size: 1rem;
- 
- }
- 
- 
- 
- a:hover {
- 
-  color: indianred;
- 
- }
- 
- 
- 
- /*HEADER*/
- 
- header {
- 
-  position: relative;
- 
-  padding: 0 2rem;
- 
-  position: fixed;
- 
- }
- 
- 
- 
- .navbar {
- 
-  width: 100%;
- 
-  height: 60px;
- 
-  max-width: 1200px;
- 
-  margin: 0 auto;
- 
-  display: flex;
- 
-  align-items: center;
- 
-  justify-content: space-between;
- 
- }
- 
- 
- 
- .navbar .logo a {
- 
-  font-size: 1.5rem;
- 
-  font-weight: bold;
- 
- }
- 
- 
- 
- .toggle-checkbox {
- 
-  display: none;
- 
- }
- 
- 
- 
- .toggle_btn {
- 
-  color: #fff;
- 
-  font-size: 1.5rem;
- 
-  cursor: pointer;
- 
- }
- 
- 
- 
- .toggle_btn i {
- 
-  cursor: pointer;
- 
- }
- 
- 
- 
- .dropdown_menu {
- 
-  display: none;
- 
-  position: absolute;
- 
-  top: 60px;
- 
-  right: 2rem;
- 
-  width: 200px;
- 
-  background: rgba(255, 255, 255, 0.1);
- 
-  backdrop-filter: blur(15px);
- 
-  border-radius: 10px;
- 
-  overflow: hidden;
- 
- }
- 
- 
- 
+
+
+
  .toggle-checkbox:checked ~ .dropdown_menu {
- 
-  display: block;
- 
+
+   display: block;
+
  }
- 
- 
- 
+
+
+
+ .dropdown_menu {
+
+   top: 60px;
+
+   right: 0;
+
+   width: 100%;
+
+ }
+
+
+
+ .dropdown_menu ul {
+
+   padding: 1rem;
+
+ }
+
+
+
  .dropdown_menu li {
- 
-  padding: 0.7rem;
- 
-  display: flex;
- 
-  align-items: center;
- 
-  justify-content: center;
- 
+
+   display: block;
+
+   padding: 0.5rem 0;
+
  }
- 
- 
- 
- .home_a{
- 
- 
- 
-  color: #000;
- 
- }
- 
- .ong_a{
- 
-  color: #000;
- 
- }
- 
- .mej_a{
- 
-  color: #000;
- 
- 
- 
- }
- 
- .cal_a{
- 
-  color: #000;
- 
- }
- 
- 
- 
- .dropdown_menu .action_btn {
- 
-  width: 100%;
- 
-  display: flex;
- 
-  justify-content: center;
- 
-  color: #000;
- 
- }
- 
- 
- 
- /* Responsivo */
- 
- @media(max-width: 992px) {
- 
-  .navbar .logo {
- 
-    flex: 1;
- 
-  }
- 
- 
- 
-  .navbar .links,
- 
-  .action_btn {
- 
-    display: none;
- 
-  }
- 
- 
- 
-  .toggle-checkbox:checked ~ .toggle_btn {
- 
-    color: #fff;
- 
-  }
- 
- 
- 
-  .toggle-checkbox:checked ~ .dropdown_menu {
- 
-    display: block;
- 
-  }
- 
- 
- 
-  .dropdown_menu {
- 
-    top: 60px;
- 
-    right: 0;
- 
-    width: 100%;
- 
-  }
- 
- 
- 
-  .dropdown_menu ul {
- 
-    padding: 1rem;
- 
-  }
- 
- 
- 
-  .dropdown_menu li {
- 
-    display: block;
- 
-    padding: 0.5rem 0;
- 
-  }
- 
- }
- 
- .titulo{
- 
-  color: #000;
- 
-  text-align: center;
- 
- }
- 
- .Descripcion {
- 
-  width: 600px;
- 
-  height: 250px;
- 
-  backdrop-filter: blur(10px);/* Utilizamos rgba para dar un color con transparencia */
- 
-  backdrop-filter: blur(10px); /* Aplicamos un filtro de desenfoque */
- 
-  border-radius: 10px; /* Para redondear las esquinas */
- 
-  position: absolute; /* Usamos posición absoluta */
- 
-  top: 50%; /* Centramos verticalmente */
- 
-  left: 50%; /* Centramos horizontalmente */
- 
-  transform: translate(-50%, -50%); /* Centramos completamente */
- 
-  text-align: center;
- 
-  padding: 20px;
- 
- }
- 
- .hospita{
- 
-  height: 50px;
- 
-  width: 50px;
- 
-  left: 50%;
- 
-  bottom: ;
- 
-  position: absolute; /* Usamos posición absoluta */
- 
-  top: 50%;
- 
- }
- 
- 
+
+}
+
+.titulo{
+
+ color: #000;
+
+ text-align: center;
+
+}
+
+.Descripcion {
+
+ width: 600px;
+
+ height: 250px;
+
+ backdrop-filter: blur(10px);/* Utilizamos rgba para dar un color con transparencia */
+
+ backdrop-filter: blur(10px); /* Aplicamos un filtro de desenfoque */
+
+ border-radius: 10px; /* Para redondear las esquinas */
+
+ position: absolute; /* Usamos posición absoluta */
+
+ top: 50%; /* Centramos verticalmente */
+
+ left: 50%; /* Centramos horizontalmente */
+
+ transform: translate(-50%, -50%); /* Centramos completamente */
+
+ text-align: center;
+
+ padding: 20px;
+
+}
+
+.hospita{
+
+ height: 50px;
+
+ width: 50px;
+
+ left: 50%;
+
+ bottom: ;
+
+ position: absolute; /* Usamos posición absoluta */
+
+ top: 50%;
+
+}
+
+/* Estilos para el carrusel */
+#carouselExample {
+  max-width: 500px; /* Ancho máximo del carrusel */
+  max-height: 500px; /* Altura máxima del carrusel */
+  overflow: hidden; /* Ocultar cualquier contenido que exceda los límites del carrusel */
+  position: relative; /* Posición relativa para los controles */
+}
+
+/* Estilos para las imágenes dentro del carrusel */
+.carousel-item img {
+  width: 100%; /* Ancho máximo de la imagen */
+  height: auto; /* Altura se ajustará automáticamente para mantener la proporción */
+  object-fit: cover; /* Ajustar la imagen dentro del contenedor sin distorsión */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilos para los controles del carrusel */
+.carousel-control {
+  position: absolute; /* Posición absoluta para los controles */
+  top: 50%; /* Posición vertical centrada */
+  transform: translateY(-50%); /* Alinear verticalmente */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: white; /* Color del texto */
+  font-size: 2rem; /* Tamaño del texto */
+  cursor: pointer; /* Cursor de puntero */
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno */
+  z-index: 10; /* Colocar encima de las imágenes */
+}
+
+/* Estilos para los controles de navegación previos */
+.carousel-control.prev {
+  left: 0; /* Alinear a la izquierda */
+  border-radius: 50% 0 0 50%; /* Bordes redondeados en la esquina izquierda */
+}
+
+/* Estilos para los controles de navegación siguientes */
+.carousel-control.next {
+  right: 0; /* Alinear a la derecha */
+  border-radius: 0 50% 50% 0; /* Bordes redondeados en la esquina derecha */
+}
+
