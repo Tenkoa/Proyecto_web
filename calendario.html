@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo_calendario.css">
+</head>
+
+<body>
+    <button class="btn"><a href="perfil.html">Regresar</a></button>
+    <div class="container calendar">
+        <div class="accordion" id="monthAccordion">
+            <!-- Enero -->
+            <div class="card">
+                <div class="card-header" id="januaryHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#januaryCollapse"
+                            aria-expanded="true" aria-controls="januaryCollapse">
+                            Enero
+                        </button>
+                    </h5>
+                </div>
+                <div id="januaryCollapse" class="collapse" aria-labelledby="januaryHeading"
+                    data-parent="#monthAccordion">
+                    <div class="card-body">
+                        <!-- Calendario de Enero -->
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="day-label"><abbr title="Lunes">Lun</abbr></th>
+                                    <th class="day-label"><abbr title="Martes">Mar</abbr></th>
+                                    <th class="day-label"><abbr title="Miércoles">Mié</abbr></th>
+                                    <th class="day-label"><abbr title="Jueves">Jue</abbr></th>
+                                    <th class="day-label"><abbr title="Viernes">Vie</abbr></th>
+                                    <th class="day-label"><abbr title="Sábado">Sáb</abbr></th>
+                                    <th class="day-label"><abbr title="Domingo">Dom</abbr></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan1" class="custom-checkbox">
+                                        <label for="jan1">1</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan2" class="custom-checkbox">
+                                        <label for="jan2">2</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan3" class="custom-checkbox">
+                                        <label for="jan3">3</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan4" class="custom-checkbox">
+                                        <label for="jan4">4</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan5" class="custom-checkbox">
+                                        <label for="jan5">5</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan6" class="custom-checkbox">
+                                        <label for="jan6">6</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan7" class="custom-checkbox">
+                                        <label for="jan7">7</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan8" class="custom-checkbox">
+                                        <label for="jan8">8</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan9" class="custom-checkbox">
+                                        <label for="jan9">9</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan10" class="custom-checkbox">
+                                        <label for="jan10">10</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan11" class="custom-checkbox">
+                                        <label for="jan11">11</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan12" class="custom-checkbox">
+                                        <label for="jan12">12</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan13" class="custom-checkbox">
+                                        <label for="jan13">13</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan14" class="custom-checkbox">
+                                        <label for="jan14">14</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan15" class="custom-checkbox">
+                                        <label for="jan15">15</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan16" class="custom-checkbox">
+                                        <label for="jan16">16</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan17" class="custom-checkbox">
+                                        <label for="jan17">17</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan18" class="custom-checkbox">
+                                        <label for="jan18">18</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan19" class="custom-checkbox">
+                                        <label for="jan19">19</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan20" class="custom-checkbox">
+                                        <label for="jan20">20</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan21" class="custom-checkbox">
+                                        <label for="jan21">21</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan22" class="custom-checkbox">
+                                        <label for="jan22">22</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan23" class="custom-checkbox">
+                                        <label for="jan23">23</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan24" class="custom-checkbox">
+                                        <label for="jan24">24</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan25" class="custom-checkbox">
+                                        <label for="jan25">25</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan26" class="custom-checkbox">
+                                        <label for="jan26">26</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan27" class="custom-checkbox">
+                                        <label for="jan27">27</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan28" class="custom-checkbox">
+                                        <label for="jan28">28</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan29" class="custom-checkbox">
+                                        <label for="jan29">29</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan30" class="custom-checkbox">
+                                        <label for="jan30">30</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="jan31" class="custom-checkbox">
+                                        <label for="jan31">31</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Enero -->
+            <!-- Febrero -->
+            <div class="card">
+                <div class="card-header" id="februaryHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                            data-target="#februaryCollapse" aria-expanded="true" aria-controls="februaryCollapse">
+                            Febrero
+                        </button>
+                    </h5>
+                </div>
+                <div id="februaryCollapse" class="collapse" aria-labelledby="februaryHeading"
+                    data-parent="#monthAccordion">
+                    <div class="card-body">
+                        <!-- Calendario de Febrero -->
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="day-label"><abbr title="Lunes">Lun</abbr></th>
+                                    <th class="day-label"><abbr title="Martes">Mar</abbr></th>
+                                    <th class="day-label"><abbr title="Miércoles">Mié</abbr></th>
+                                    <th class="day-label"><abbr title="Jueves">Jue</abbr></th>
+                                    <th class="day-label"><abbr title="Viernes">Vie</abbr></th>
+                                    <th class="day-label"><abbr title="Sábado">Sáb</abbr></th>
+                                    <th class="day-label"><abbr title="Domingo">Dom</abbr></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <label for="feb1"></label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <label for="feb2"></label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <label for="feb3"></label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb4" class="custom-checkbox">
+                                        <label for="feb4">1</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb5" class="custom-checkbox">
+                                        <label for="feb5">2</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb6" class="custom-checkbox">
+                                        <label for="feb6">3</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb7" class="custom-checkbox">
+                                        <label for="feb7">4</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb8" class="custom-checkbox">
+                                        <label for="feb8">5</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb9" class="custom-checkbox">
+                                        <label for="feb9">6</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb10" class="custom-checkbox">
+                                        <label for="feb10">7</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb11" class="custom-checkbox">
+                                        <label for="feb11">8</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb12" class="custom-checkbox">
+                                        <label for="feb12">9</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb13" class="custom-checkbox">
+                                        <label for="feb13">10</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb14" class="custom-checkbox">
+                                        <label for="feb14">11</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb15" class="custom-checkbox">
+                                        <label for="feb15">12</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb16" class="custom-checkbox">
+                                        <label for="feb16">13</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb17" class="custom-checkbox">
+                                        <label for="feb17">14</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb18" class="custom-checkbox">
+                                        <label for="feb18">15</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb19" class="custom-checkbox">
+                                        <label for="feb19">16</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb20" class="custom-checkbox">
+                                        <label for="feb20">17</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb21" class="custom-checkbox">
+                                        <label for="feb21">18</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb22" class="custom-checkbox">
+                                        <label for="feb22">19</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb23" class="custom-checkbox">
+                                        <label for="feb23">20</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb24" class="custom-checkbox">
+                                        <label for="feb24">21</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb25" class="custom-checkbox">
+                                        <label for="feb25">22</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb26" class="custom-checkbox">
+                                        <label for="feb26">23</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb27" class="custom-checkbox">
+                                        <label for="feb27">24</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb28" class="custom-checkbox">
+                                        <label for="feb28">25</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb29" class="custom-checkbox">
+                                        <label for="feb29">26</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb30" class="custom-checkbox">
+                                        <label for="feb30">27</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb31" class="custom-checkbox">
+                                        <label for="feb31">28</label>
+                                    </td>
+                                    <td class="day-cell">
+                                        <input type="checkbox" id="feb32" class="custom-checkbox">
+                                        <label for="feb32">29</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Febrero -->
+        </div>
+    </div>
+
+    <div class="carrito">
+        <span class="carrito-icono">🛒</span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

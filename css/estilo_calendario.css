@@ -1,0 +1,41 @@
+body {
+    padding-top: 50px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url(https://cdn.forbes.com.mx/2023/05/ADN.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.calendar {
+    max-width: 600px;
+    margin: auto;
+}
+
+.month-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.day-label {
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.carrito {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+.carrito-icono {
+    font-size: 5em; 
+}
