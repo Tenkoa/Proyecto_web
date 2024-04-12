@@ -20,23 +20,25 @@
     
     <div class="fondo">
         <h1 class="titulo">iniciar sesion</h1>
-        <form action="no se ">
+       
+       
+       
+       
+       
+       
+        <form action="perfil.html" method="GET">
             <div class="user">
-                <input type="text" required placeholder="nombre de usuario ">
-                
+                <input type="text" name="usuario" required placeholder="nombre de usuario">
             </div>
             <div class="contrasena">
-                <input type="password" required placeholder="contraseña">
-                
+                <input type="password" name="contraseña" required placeholder="contraseña" pattern=".*[@].*" title="La contraseña debe contener el carácter especial '@'">
             </div>
             <div class="recordar">Olvido su Contraseña</div>
-            <button id="iniciarButton">Iniciar</button>
-
+            <input type="submit" value="Iniciar Sesión">
             <div class="Registrarse">
-                quiero hacer el <a href="#">registro</a>
+                Quiero hacer el <a href="perfil.html">registro</a>
             </div>
         </form>
-
             
 
     </div>
