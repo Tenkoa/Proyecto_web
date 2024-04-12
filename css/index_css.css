@@ -19,7 +19,7 @@ body {
 
  background-color: #000;
 
- background-image: url(https://materiageek.com/wp-content/uploads/2020/04/50-Fondos-de-escritorio-y-fondos-minimalistas-Edicion-2020.jpg);
+ background-image: url(https://www.saluteca.com/wp-content/uploads/2021/04/ADN.jpg);
 
  background-size: cover;
 
@@ -272,10 +272,10 @@ header {
 
 
  .dropdown_menu ul {
-
-   padding: 1rem;
-
- }
+  padding: 1rem;
+  position: absolute;
+  z-index: 9999; 
+}
 
 
 
@@ -303,19 +303,19 @@ header {
 
  height: 250px;
 
- backdrop-filter: blur(10px);/* Utilizamos rgba para dar un color con transparencia */
+ backdrop-filter: blur(10px);
 
- backdrop-filter: blur(10px); /* Aplicamos un filtro de desenfoque */
+ backdrop-filter: blur(10px); 
 
- border-radius: 10px; /* Para redondear las esquinas */
+ border-radius: 10px; 
 
- position: absolute; /* Usamos posición absoluta */
+ position: relative; 
 
- top: 50%; /* Centramos verticalmente */
+ top: 25%;
 
- left: 50%; /* Centramos horizontalmente */
+ left: 50%; 
 
- transform: translate(-50%, -50%); /* Centramos completamente */
+ transform: translate(-50%, -50%); 
 
  text-align: center;
 
@@ -333,7 +333,7 @@ header {
 
  bottom: ;
 
- position: absolute; /* Usamos posición absoluta */
+ position: absolute; 
 
  top: 50%;
 
@@ -341,43 +341,61 @@ header {
 
 /* Estilos para el carrusel */
 #carouselExample {
-  max-width: 500px; /* Ancho máximo del carrusel */
-  max-height: 500px; /* Altura máxima del carrusel */
-  overflow: hidden; /* Ocultar cualquier contenido que exceda los límites del carrusel */
-  position: relative; /* Posición relativa para los controles */
+  max-width: 500px; 
+  max-height: 500px; 
+  overflow: hidden; 
+  position: relative; /
+  
 }
 
-/* Estilos para las imágenes dentro del carrusel */
+
 .carousel-item img {
-  width: 100%; /* Ancho máximo de la imagen */
-  height: auto; /* Altura se ajustará automáticamente para mantener la proporción */
-  object-fit: cover; /* Ajustar la imagen dentro del contenedor sin distorsión */
-  border-radius: 10px; /* Bordes redondeados para las imágenes */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+  border-radius: 10px; 
 }
 
-/* Estilos para los controles del carrusel */
-.carousel-control {
-  position: absolute; /* Posición absoluta para los controles */
-  top: 50%; /* Posición vertical centrada */
-  transform: translateY(-50%); /* Alinear verticalmente */
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  color: white; /* Color del texto */
-  font-size: 2rem; /* Tamaño del texto */
-  cursor: pointer; /* Cursor de puntero */
-  border: none; /* Sin borde */
-  outline: none; /* Sin contorno */
-  z-index: 10; /* Colocar encima de las imágenes */
+
+.carousel-control-next,.carousel-control-prev{
+
+   
+  margin: auto;
+  container: 400px;
+  width: 200px;
+  height:200px ;
+  background-color: aqua;
+  
 }
 
-/* Estilos para los controles de navegación previos */
-.carousel-control.prev {
-  left: 0; /* Alinear a la izquierda */
-  border-radius: 50% 0 0 50%; /* Bordes redondeados en la esquina izquierda */
+.carousel-item img {
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto; 
 }
 
-/* Estilos para los controles de navegación siguientes */
-.carousel-control.next {
-  right: 0; /* Alinear a la derecha */
-  border-radius: 0 50% 50% 0; /* Bordes redondeados en la esquina derecha */
+
+.carru div{
+  position:  ;
+  top: -130%px;
+  
 }
 
+
+input{
+  display: inline-block;
+  padding: 15px 30px;
+  color: greenyellow;
+  letter-spacing: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+ 
+input:hover{
+  background: aqua;
+  box-shadow:0 0 10px #04dff3,0 0 9px #04dff3,0 0 10px #04dff3;
+  transition-delay: 0.3s ;
+}

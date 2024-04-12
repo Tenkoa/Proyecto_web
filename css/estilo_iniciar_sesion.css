@@ -3,7 +3,7 @@ body{
 
     font-family: Arial, Helvetica, sans-serif;
     background-color: blueviolet;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/022/995/637/non_2x/doctor-shakes-hands-with-little-cancer-patient-undergoing-chemotherapy-to-fight-cancer-teenage-boy-with-cancer-lost-his-hair-due-to-radiation-exposure-and-needs-support-of-clinic-staff-and-parents-vector.jpg);
+    background-image: url(https://www.criogene.es/wp-content/uploads/2018/04/adn-informacion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat ;
@@ -96,4 +96,22 @@ form .username{
     box-shadow: 0 0 10px 3px rgba(0, 0, 255, 0.5); /* Agrega una sombra para simular el brillo */
 }
 
-
+.aside{
+    top: 500px;
+}
+input{
+    display: inline-block;
+    padding: 15px 30px;
+    color: greenyellow;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+   
+  input:hover{
+    background: aqua;
+    box-shadow:0 0 10px #04dff3,0 0 9px #04dff3,0 0 10px #04dff3;
+    transition-delay: 0.3s ;
+  }
