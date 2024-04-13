@@ -15,6 +15,10 @@ body{
 
 }
 
+a{
+    color: greenyellow; 
+    text-decoration: none;
+}
 li{
     display: inline-block;
     padding: 15px 30px;
@@ -33,11 +37,3 @@ li:hover{
     box-shadow:0 0 10px #a945c7,0 0 9px #a945c7,0 0 10px #a945c7;
     transition-delay: 0.3s ;
 }
-.cartitas div{
-    position: absolute;
-    top: 40%; 
-    right: 500px; 
-    width: 100px; 
-    height: 100px; 
-    
-  }
