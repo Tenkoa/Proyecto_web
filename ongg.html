@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ong.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG MedUnity</title>
+</head>
+<body>
+    <a class="home" href="index.html">Home</a>
+    <a class="home" href="perfil.html">Perfil</a>
+    <a class="home" href="valora_medico.html">mejores medicos</a>
+    <a class="home" href="calendario.html">calendario</a>
+    <div class="div2">
+        <div class="title-container">
+            
+            <p class="tit1">MedUnity</p>    
+        </div>
+    </div>
+
+    <div class="contenedor">
+    <div class="div1">
+        <h2 class="sub">Mejores Donadores:</h2>
+        <p id="name"></p>
+
+        
+    </div>
+
+    <div class="div3">
+            <div class="texto">
+                <h3>!Haz tu Aporte¡</h3>
+                <p class="donar-info">¿Por qué donar a MedUnity? Porque cada donación marca la diferencia entre la desesperación y la esperanza, entre la enfermedad y la curación.
+
+                Imagina enfrentarte a la lucha contra el cáncer sin los recursos necesarios para acceder a tratamientos médicos, medicamentos o servicios de apoyo. Lamentablemente, esta es la realidad para muchas personas en situación de pobreza o con recursos limitados. Sin embargo, tu generosidad puede cambiar esa realidad.
+            
+                Cada donación a MedUnity tiene un impacto directo y tangible en la vida de quienes luchan contra el cáncer con pocos recursos. Con tu apoyo, podemos brindarles acceso a tratamientos médicos de calidad, terapias de apoyo, medicamentos esenciales y servicios que les ayuden a enfrentar la enfermedad con dignidad y esperanza.
+            
+                Tu donación no solo proporciona ayuda médica, sino que también ofrece apoyo emocional, psicológico y social a los pacientes y sus familias. Es una muestra de solidaridad y compasión que puede marcar una diferencia significativa en la vida de quienes más lo necesitan.
+            
+                Además, al donar a MedUnity, estás contribuyendo a reducir las desigualdades en el acceso a la atención médica y a promover la igualdad de oportunidades para todos, independientemente de su situación económica. Estás ayudando a construir un mundo donde todos tengan acceso a la atención médica y la ayuda que merecen.
+            
+                Tu donación importa. Tu apoyo importa. Juntos, podemos hacer una diferencia real en la vida de quienes luchan contra el cáncer con pocos recursos. Únete a nosotros y marca la diferencia hoy.
+            
+                Gracias por tu generosidad y solidaridad.</p>
+            </div>
+
+
+            <div class="porcentajes" style="--porcentaje: 20"; --color: aquamarine">
+        <svg width="350" height="350" viewBox="0 0 100 100">
+            <circle r="45" cx="50%" cy="50%" pathlength="100"></circle>
+            <circle r="45" cx="50%" cy="50%" pathlength="100"></circle>
+        </svg>
+        <span>$600.000</span>
+        </div>
+        <button class="glow-on-hover" type="button">HAZ CLICK AQUI, SI QUIERES DONAR!!!</button>
+        <h1>Nuestros Pacientes</h1>
+        <div class="galeria">
+            <input type="radio" name="navegacion" id="_1" checked>
+            <input type="radio" name="navegacion" id="_2">
+            <input type="radio" name="navegacion" id="_3">
+            <input type="radio" name="navegacion" id="_4"> 
+            <img src="https://www.cuentamealgobueno.com/wp-content/uploads/2017/10/20171004-2-oli-18.jpg" width="260" height="300" alt="Galeria CSS 1" />
+            <img src="https://s2.ppllstatics.com/ideal/www/multimedia/202302/15/media/cortadas/AAG%20230214%20HUGO%20%200018_-kezG-U190634939700RoC-1968x1216@Ideal.jpg" width="260" height="300" alt="Galeria CSS 2"  />
+            <img src="https://media.diariolasamericas.com/p/cd3ef612af34da6ae93401de328e469b/adjuntos/216/imagenes/001/208/0001208108/855x0/smart/cancer-nino-jpg.jpg" width="260" height="300" alt="Galeria CSS 3" />
+            <img src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2022/01/jovem-doa-menino-cancer.jpg" width="260" height="300" alt="Galeria CSS 4" />
+          </div>
+    </div>
+
+
+</div>
+
+<script>
+    const fetchUsersAndSaveToLocalStorage = async () => {
+        try {
+            let url = 'https://jsonplaceholder.typicode.com/users';
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            saveUsersToLocalStorage(data);
+        } catch (error) {
+            console.log('Fetch failed:', error);
+            showUsersFromLocalStorage();
+        }
+    }
+
+    const saveUsersToLocalStorage = (data) => {
+        let usersArray = [];
+        for (let i = 0; i < data.length; i++) {
+            usersArray.push(data[i].name);
+        }
+        localStorage.setItem('users', JSON.stringify(usersArray));
+        
+        showUsersFromLocalStorage();
+    }
+
+    const showUsersFromLocalStorage = () => {
+        const savedUsers = JSON.parse(localStorage.getItem('users'));
+        if (savedUsers) {
+            let body = '';
+            savedUsers.forEach(name => {
+                body += `<p>${name}</p>`;
+            });
+            document.getElementById('name').innerHTML = body;
+        }
+    }
+
+    
+    fetchUsersAndSaveToLocalStorage();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,224 @@
+.home {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #002bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid #002bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.imgperfil{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+
+.ult{
+    padding: 0PX;
+    border: 0px;
+    margin: 0px;
+    flex: auto;
+    box-sizing: border-box;
+}
+
+.nom1{
+
+    display: inline;
+    border: 0px;
+    margin: 0px;
+    flex: auto;
+}
+
+.tit1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    color: white;
+}
+
+.div1{
+    width: 200px;
+    height: 800px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.navbar {
+    width: auto;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.persona1{
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.persona2{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+
+.persona3{
+    width: 200px;
+    height: 100px;
+    background-color: darkgreen;
+}
+.persona4{
+    width: 200px;
+    height: 100px;
+    background-color: hotpink;
+}
+.persona5{
+    width: 200px;
+    height: 100px;
+    background-color: gold;
+}
+.persona6{
+    width: 200px;
+    height: 100px;
+    background-color: lightsalmon;
+}
+.persona7{
+    width: 200px;
+    height: 100px;
+    background-color: orangered;
+}
+.persona8{
+    width: 200px;
+    height: 100px;
+    background-color: navyw;
+}
+
+/*.chat{
+    float: right;
+    background-color: darkred;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+}
+*/
+
+.chat{
+    position: absolute;
+    top: 105px;
+    left: 200px; 
+    width: 1140px;
+    height: 795px; 
+    background-color: darkred; 
+}
+.navbarmsj{
+    width: 800px;
+    height: 80px;
+    background-color: darkmagenta;
+}
+
+.contenedor_msj{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    height: 795px;
+    background-color: black;
+}
+
+.msj1{
+    width: 400px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.msj2{
+    background-color: aqua;
+    width: 400px;
+    height: 50px;
+    align-self: flex-end; 
+}
+
+.msj3{
+    width: 400px;
+    height: 50px;
+    background-color: yellow;
+}
+.msj4{
+    background-color: aqua;
+    width: 400px;
+    height: 50px;
+    align-self: flex-end; 
+}
+
+
+
+.imgperfil1{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbarmsj p {
+    display: inline-block;
+    vertical-align: middle; 
+    margin-left: 10px; 
+}
+
+.enviar_mensaje {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    padding: 10px;
+    background-color: #222;
+}
+
+.enviar_mensaje input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.enviar_mensaje button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enviar_mensaje button:hover {
+    background-color: #45a049;
+}
+
+.archIMP{
+
+    position: absolute;
+    top: 0;
+    left: 800px; 
+    width: 340px; 
+    height: 100%; 
+    background-color: white; 
+}

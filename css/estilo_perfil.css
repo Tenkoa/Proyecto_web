@@ -10,10 +10,7 @@ body{
    height: 100vh;
 
 }
-a{
-    text-decoration: none;
-    color: greenyellow;
-}
+
 .perfil1{
 
 }
@@ -29,7 +26,10 @@ li{
     transition: 0.2s;
     
 }
-
+a{
+    text-decoration: none;
+    color: greenyellow;
+}
 li:hover{
      
     background: blueviolet;
