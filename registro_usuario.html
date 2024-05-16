@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/registro_user_css.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>jquery</title>
 </head>
 <body>
     <div class="fondo_registro">
         
         <div>
 
-            <input type="text" required placeholder="Nombre">
+            <input id="nom" type="text" required placeholder="Nombre">
+            <label id="lblnombre" for="nom">*</label>
 
+        </div>
+        <br>
+        <br>
+        <div>
+
+            <input id="correo" type="text" required placeholder="correo">
+            <label id="lblcorreo" for="correo">*</label>
+        </div>
+        <br>
+        <div>
+
+            <input id="fono" type="text"  placeholder="Teléfono">
+            <label id="lblfono" for="fono">*</label>
 
         </div>
         <br>
         <div>
 
-            <input type="text" required placeholder="correo">
+            <input id="pass" type="password" required placeholder="contraseña">
 
         </div>
         <br>
-        <div>
-
-            <input type="tel" pattern="[0-9]*" placeholder="Teléfono">
-
-
-        </div>
-        <br>
-        <div>
-
-            <input type="password" required placeholder="contraseña">
-
-        </div>
-        <br>
-        <input class="boton" type="submit" value="Registrase">
+        <input id="sub1" class="boton" type="submit" value="Registrase">
         
     </div>
-
+    
+    <script src="javascr/captura_valores.js"></script>
 </body>
 </html>
