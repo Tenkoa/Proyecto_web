@@ -247,7 +247,7 @@
         </div>
     </div> 
 
-    <div class="chat">
+    <div class="chat" id="chatArea">
         <div class="contenedor_msj">
             <div class="navbarmsj">
                 <img class="imgperfil1" src="https://i.pinimg.com/236x/f4/93/00/f49300de0516c5640995bee71b5ff620.jpg" alt=""> <p class="">Luis</p>
@@ -274,12 +274,14 @@
             <div class="msj4">me alegro que te este gustando medUnity</div>
         </div>
         <div class="enviar_mensaje">
-            <input type="text" placeholder="Escribe tu mensaje aquí...">
-            <button>Enviar</button>
+            <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje aquí...">
+            <button onclick="enviarMensaje()">Enviar</button>
         </div>
     </div>
 
 </div>
+
+<script src="javascr\chat.js"></script>
 
 </body>
 </html>
