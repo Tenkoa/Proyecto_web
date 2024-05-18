@@ -5,6 +5,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navbar {
+            width: auto;
+            height: 100px;
+            background-color: #002bff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .home {
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #002bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 2px solid #002bff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .home:hover {
+            background-color: #0017ff;
+        }
+
+        .tit1 {
+            text-align: center;
+            font-size: 36px;
+            margin: 0;
+            color: white;
+        }
+
+        .div1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .chat {
+            position: absolute;
+            top: 105px;
+            left: 200px; 
+            width: calc(100% - 200px);
+            height: calc(100% - 105px);
+            background-color: #d50000; 
+        }
+
+        .navbarmsj {
+            width: 100%;
+            height: 80px;
+            background-color: #6a0080;
+        }
+
+        .contenedor_msj {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            height: calc(100% - 80px);
+            background-color: #222;
+        }
+
+        .msj1, .msj2, .msj3, .msj4 {
+            width: 400px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .enviar_mensaje {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background-color: #6a0080;
+        }
+
+        .enviar_mensaje input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .enviar_mensaje button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d50000;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .enviar_mensaje button:hover {
+            background-color: #b71c1c;
+        }
+
+        .archIMP {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 340px; 
+            height: 100%; 
+            background-color: #fff; 
+        }
+
+        .imgperfil, .imgperfil1 {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .persona1, .persona2, .persona3, .persona4, .persona5, .persona6, .persona7, .persona8 {
+            width: 200px;
+            height: 100px;
+            background-color: #ffab00;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .navbar {
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .div1 {
+                flex-direction: column;
+            }
+
+            .chat {
+                position: static;
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -78,7 +241,7 @@
 
 
         <div class="persona8" >           
-             <img class="imgperfil" src="https://i.pinimg.com/236x/f4/93/00/f49300de0516c5640995bee71b5ff620.jpg" alt="">
+            <img class="imgperfil" src="https://i.pinimg.com/236x/f4/93/00/f49300de0516c5640995bee71b5ff620.jpg" alt="">
             <p class="nom1">Luis</p>
             <p class="ult">Activo</p>
         </div>
