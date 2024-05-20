@@ -1,104 +1,104 @@
-
-
-body{
-
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: blueviolet;
-    background-image: url(https://veja.abril.com.br/wp-content/uploads/2021/06/dna-closely.jpg?quality=90&strip=info&w=1280&h=720&crop=1);
-    background-size: cover;
+    background-image: url(https://static9.depositphotos.com/1007566/1177/v/450/depositphotos_11771181-stock-illustration-medical-symbol.jpg);
+    background-size: cover; /* Hacer que la imagen de fondo se adapte completamente */
     background-position: center;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     justify-content: center;
     margin: 0;
     padding: 0;
     height: 100vh;
 }
 
-.fondo_registro{
+.tit1 {
+    text-align: center;
+    font-size: 5vw; /* Tamaño de fuente relativo */
+    margin: 0;
+    color: white;
+}
+
+.navbar {
+    width: auto;
+    height: 10vh; /* Altura relativa */
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fondo_registro {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ancho relativo */
+    max-width: 400px; /* Ancho máximo */
     background: none;
-    border: none; 
-    
-    
-    
+    border: none;
 }
+
 .home {
-    display: inline-block; 
     text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
-    text-align: center;
+    font-size: 3vw; /* Tamaño de fuente relativo */
     background-color: #002bff;
-    color: white; 
-    padding: 8px 16px; 
-    border-radius: 20px; 
-    border: 2px solid #002bff; 
-    transition: background-color 0.3s, color 0.3s; 
-    max-width: 120px; /* Establecer un ancho máximo para los enlaces */
+    color: white;
+
 }
 
 .home:hover {
-    background-color: #0047ff; 
-    border-color: #0047ff; 
+    background-color: #0047ff;
+    border-color: #0047ff;
 }
-.boton{
+
+.boton {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 3% 6%; /* Relleno relativo */
     color: black;
-    letter-spacing: 4px;
-    font-size: 15px;
+    letter-spacing: 0.5vw; /* Espaciado relativo */
+    font-size: 2vw; /* Tamaño de fuente relativo */
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-
 }
 
-.boton:hover{
-     
-    background: 04dff3;
-    box-shadow:0 0 10px #04dff3,0 0 9px #04dff3,0 0 10px #04dff3;
-    transition-delay: 0.3s ;
+.boton:hover {
+    background: #04dff3;
+    box-shadow: 0 0 1vw #04dff3, 0 0 0.9vw #04dff3, 0 0 1vw #04dff3;
+    transition-delay: 0.3s;
 }
 
-
-
-.boton  span{
-     
- position: absolute;
- display: block;
+.boton span {
+    position: absolute;
+    display: block;
 }
 
-#span1{
+#span1 {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#04dff3);
-} 
+    background: linear-gradient(90deg, transparent, #04dff3);
+}
 
-.boton:hover #span1{
-
+.boton:hover #span1 {
     left: 100%;
     transition: 1s;
 }
 
-input{
+input {
     display: inline-block;
-    padding: 15px 30px;
-    color: greenyellow;
-    letter-spacing: 4px;
-    font-size: 15px;
+    padding: 3% 6%; /* Relleno relativo */
+    color: black;
+    letter-spacing: 0.5vw; /* Espaciado relativo */
+    font-size: 2vw; /* Tamaño de fuente relativo */
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
 }
-   
-input:hover{
+
+input:hover {
     background: aqua;
-    box-shadow:0 0 10px #04dff3,0 0 9px #04dff3,0 0 10px #04dff3;
-    transition-delay: 0.3s ;
+    box-shadow: 0 0 1vw #04dff3, 0 0 0.9vw #04dff3, 0 0 1vw #04dff3;
+    transition-delay: 0.3s;
 }
