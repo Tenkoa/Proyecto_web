@@ -8,15 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilo_calendario.css">
+    <link rel="stylesheet" href="css\estilo_calendario.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="perfil.html" class="navbar-brand">Home</a>
-            <a href="Carro.html" class="navbar-link">Carrito <i class="fas fa-cart-shopping"></i></a>
-
         </div>
     </nav>
     <div class="container calendar">
@@ -374,8 +372,19 @@
             <!-- Fin de Febrero -->
         </div>
     </div>
+
+    <div class="carrito">
+        <button id="reservarBtn" class="btn btn-primary">
+            Reservar
+        </button>
+        <div id="mensajeReserva" class="alert alert-success" style="display: none;">
+            Reserva exitosa
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascr\calendario_captura_cita.js"></script>
 </body>
 </html>
