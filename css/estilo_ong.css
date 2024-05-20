@@ -17,6 +17,7 @@ body {
     border-radius: 20px; 
     border: 2px solid #002bff; 
     transition: background-color 0.3s, color 0.3s; 
+    max-width: 120px; /* Establecer un ancho máximo para los enlaces */
 }
 
 .home:hover {
@@ -29,6 +30,7 @@ body {
     font-size: 60px; 
     text-align: center;
     position: relative; 
+    max-width: 80%; /* Establecer un ancho máximo para el título */
 }
 
 .tit1::after {
@@ -60,23 +62,21 @@ h3{
 }
 
 .div1 {
-    margin-top: 0; /* Ajusta el margen superior */
-    height: 900px; /* Establece la altura */
-    width: 200px; /* Establece el ancho */
-    border-right: 2px solid blue; /* Agrega un borde derecho */
-    border-top: 2px solid blue; /* Agrega un borde superior */
+    margin-top: 20px; /* Aumentar el margen superior para separar del título */
+    height: auto; /* Cambiar la altura a automática para adaptarse al contenido */
+    width: 100%; /* Cambiar el ancho a automático para llenar el espacio disponible */
+    border-bottom: 2px solid blue; /* Agregar un borde inferior */
 }
-
-
-
-.div3{
-
-     width: 1500px;
-     height: 1000px;
-     position: relative;
+.div3 {
+    width: 100%; /* Cambiar el ancho a automático para llenar el espacio disponible */
+    max-width: 600px; /* Establecer un ancho máximo */
+    height: auto; /* Cambiar la altura a automática para adaptarse al contenido */
+    position: relative;
 }
-.contenedor{
+.contenedor {
     display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-around; /* Alinear los elementos horizontalmente */
 }
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -117,9 +117,11 @@ circle:nth-child(2){
 
 }
 
-.porcentajes{
+.porcentajes {
     position: relative;
-    width: 350px;
+    width: 100%; /* Cambiar el ancho a automático para llenar el espacio disponible */
+    max-width: 350px; /* Establecer un ancho máximo */
+    margin: 20px auto; /* Centrar la gráfica */
 }
 .porcentajes span{
     position: absolute;
@@ -133,9 +135,10 @@ circle:nth-child(2){
     font: 30px/1em impact;
 }
 
-h3 {
-    text-align: center;
-    margin-right: 20px; 
+.texto h3 {
+    max-width: 100%; /* Establecer un ancho máximo para el título */
+    width: 90%; /* Establecer un ancho para que el título no se extienda demasiado en pantallas grandes */
+    margin: 20px auto; /* Centrar el título */
 }
 .texto {
     width: 300px;
@@ -147,21 +150,47 @@ h3 {
 }
 
 .donar-info {
-    width: 800px;
-    margin: 20px auto; 
-    padding: 20px; 
+    width: 80%; /* Utiliza el 80% del ancho del contenedor padre */
+    max-width: 800px; /* Establece un ancho máximo */
+    margin: 20px auto; /* Agrega un margen para centrar el texto */
+    padding: 20px; /* Agrega espacio interno para separar el contenido del borde */
     text-align: justify;
-    border: 2px solid #002bff; 
-    border-radius: 10px; 
-    background-color: #f5f5f5; 
+    border: 2px solid #002bff; /* Agrega un borde sólido con color */
+    border-radius: 10px; /* Agrega esquinas redondeadas al borde */
+    background-color: #f5f5f5; /* Agrega un fondo gris claro */
+}
+
+/* Reglas de medios para hacer el contenedor más pequeño en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .donar-info {
+        width: 90%; /* Utiliza el 90% del ancho del contenedor padre */
+    }
+}
+
+
+
+.donar-info strong {
+    color: #002bff; /* Cambia el color del texto fuerte */
+}
+
+.donar-info em {
+    font-style: italic; /* Cambia el estilo del texto enfatizado a cursiva */
+}
+.texto p {
+    max-width: 100%; /* Establecer un ancho máximo para el contenido */
+    width: 90%; /* Establecer un ancho para que el contenido no se extienda demasiado en pantallas grandes */
+    margin: 20px auto; /* Centrar el contenido */
 }
 
 .donar-info p {
-    margin-bottom: 15px; 
-    line-height: 1.6; 
+    margin-bottom: 15px; /* Agrega espacio entre párrafos */
+    line-height: 1.6; /* Ajusta la altura de línea para mejorar la legibilidad */
 }
 
 .glow-on-hover {
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 300px;
     margin-left: 65px;
     width: 220px;
     height: 50px;
