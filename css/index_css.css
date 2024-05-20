@@ -191,7 +191,8 @@ header {
 }
 
 .Descripcion {
-  width: 600px;
+  width: 90%;
+  max-width: 400px;
   height: 250px;
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -209,56 +210,4 @@ header {
   left: 50%;
   position: absolute;
   top: 50%;
-}
-
-/* Estilos para el carrusel */
-#carouselExample {
-  max-width: 500px;
-  max-height: 500px;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-}
-
-.carousel-item img {
-  max-width: 400px;
-  max-height: 400px;
-  display: block;
-  margin: 0 auto;
-}
-
-input {
-  display: inline-block;
-  padding: 15px 30px;
-  color: greenyellow;
-  letter-spacing: 4px;
-  font-size: 15px;
-  text-decoration: none;
-  overflow: hidden;
-  transition: 0.2s;
-}
-
-input:hover {
-  background: aqua;
-  box-shadow: 0 0 10px #04dff3, 0 0 9px #04dff3, 0 0 10px #04dff3;
-  transition-delay: 0.3s;
-}
-
-/* Añadir margen superior al contenido principal */
-.main-content {
-  padding-top: 80px; /* Ajustar según la altura del header */
 }
