@@ -26,7 +26,25 @@ body{
     
     
 }
+.home {
+    display: inline-block; 
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #002bff;
+    color: white; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    border: 2px solid #002bff; 
+    transition: background-color 0.3s, color 0.3s; 
+    max-width: 120px; /* Establecer un ancho máximo para los enlaces */
+}
 
+.home:hover {
+    background-color: #0047ff; 
+    border-color: #0047ff; 
+}
 .boton{
     display: inline-block;
     padding: 15px 30px;
