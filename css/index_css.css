@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: open sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   height: 100vh;
   background-color: #000;
-  background-image: url(https://www.saluteca.com/wp-content/uploads/2021/04/ADN.jpg);
+  background-image: url('https://static9.depositphotos.com/1007566/1177/v/450/depositphotos_11771181-stock-illustration-medical-symbol.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-size: 1rem;
 }
 
@@ -31,9 +31,14 @@ a:hover {
 /*HEADER*/
 
 header {
-  position: relative;
-  padding: 0 2rem;
   position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  padding: 0 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar el header */
 }
 
 .navbar {
@@ -56,7 +61,7 @@ header {
 }
 
 .toggle_btn {
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -68,16 +73,18 @@ header {
 .dropdown_menu {
   display: none;
   position: absolute;
+   z-index: 1000;
   top: 60px;
   right: 2rem;
   width: 200px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
+  /* Asegura que el menú esté por encima de otros elementos */
 }
 
-.toggle-checkbox:checked~.dropdown_menu {
+.toggle-checkbox:checked ~ .dropdown_menu {
   display: block;
 }
 
@@ -113,7 +120,7 @@ header {
 
 /* Responsivo */
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .navbar .logo {
     flex: 1;
   }
@@ -123,11 +130,11 @@ header {
     display: none;
   }
 
-  .toggle-checkbox:checked~.toggle_btn {
+  .toggle-checkbox:checked ~ .toggle_btn {
     color: #fff;
   }
 
-  .toggle-checkbox:checked~.dropdown_menu {
+  .toggle-checkbox:checked ~ .dropdown_menu {
     display: block;
   }
 
@@ -147,6 +154,35 @@ header {
     display: block;
     padding: 0.5rem 0;
   }
+
+  /* Adaptar el tamaño del logo */
+  .navbar .logo a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar .logo a {
+    font-size: 1rem;
+  }
+
+  .dropdown_menu {
+    top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .logo a {
+    font-size: 0.8rem;
+  }
+
+  .dropdown_menu {
+    top: 40px;
+  }
 }
 
 .titulo {
@@ -157,7 +193,6 @@ header {
 .Descripcion {
   width: 600px;
   height: 250px;
-  backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   position: relative;
@@ -172,7 +207,6 @@ header {
   height: 50px;
   width: 50px;
   left: 50%;
-  bottom: ;
   position: absolute;
   top: 50%;
 }
@@ -182,7 +216,7 @@ header {
   max-width: 500px;
   max-height: 500px;
   overflow: hidden;
-  position: relative;/
+  position: relative;
 }
 
 .carousel-item img {
@@ -195,7 +229,6 @@ header {
 .carousel-control-next,
 .carousel-control-prev {
   margin: auto;
-  container: 400px;
   width: 200px;
   height: 200px;
   background-color: aqua;
@@ -206,11 +239,6 @@ header {
   max-height: 400px;
   display: block;
   margin: 0 auto;
-}
-
-.carru div {
-  position: ;
-  top: -130%px;
 }
 
 input {
@@ -228,4 +256,9 @@ input:hover {
   background: aqua;
   box-shadow: 0 0 10px #04dff3, 0 0 9px #04dff3, 0 0 10px #04dff3;
   transition-delay: 0.3s;
+}
+
+/* Añadir margen superior al contenido principal */
+.main-content {
+  padding-top: 80px; /* Ajustar según la altura del header */
 }
