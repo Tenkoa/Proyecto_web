@@ -4,9 +4,11 @@ $(document).ready(function(){
         var nombre = $("#nom").val();
         var correo = $("#correo").val();
         var fono = $("#fono").val();
+        var con = $("#pass").val();
         const $Lblnombre = $("#lblnombre");
         const $lblCorreo = $("#lblcorreo");
         const $lblfono = $("#lblfono");
+        const $lblpassword = $("#lblpassword");
 
         if (!/^[A-Za-z]+$/.test(nombre) || nombre === "") {
             console.log("nombre solo puede contener letras");
@@ -28,6 +30,13 @@ $(document).ready(function(){
         } else {
             $lblfono.text("\u2713").css("color", "yellow");
         }
+
+        if (con === ""){
+            console.log("Contraseña vacia");
+            $lblpassword.text("\u2717 ").css("color", "red");
+        } else {
+            $lblpassword.text("\u2713").css("color", "yellow");
+        }
     });
 
     function esNumero(valor) {
@@ -39,8 +48,21 @@ $(document).ready(function(){
         // Redireccionar a perfil.html si todos los campos están correctamente llenados
         if ($("#lblnombre").css("color") === "rgb(255, 255, 0)" &&
             $("#lblcorreo").css("color") === "rgb(255, 255, 0)" &&
-            $("#lblfono").css("color") === "rgb(255, 255, 0)") {
+            $("#lblfono").css("color") === "rgb(255, 255, 0)"   &&
+            $("#lblpassword").css("color") === "rgb(255, 255, 0)") {
             window.location.href = "perfil.html";
         }
     });
+
+    $("#sub1").click(function(){
+        var nombre = $("#nom").val();
+        var correo = $("#correo").val();
+        var numero = $("#fono").val();
+        var contraseña = $("#pass").val();
+
+        if(nombre === "" || correo === "" || numero === "" || contraseña === ""){
+            alert("Todos los valores deben ser llenados ");
+        }
+    });
+
 });
