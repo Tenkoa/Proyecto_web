@@ -1,117 +1,139 @@
-
-body{
-
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: blueviolet;
-    background-image: url(https://www.criogene.es/wp-content/uploads/2018/04/adn-informacion.jpg);
+    background-image: url(https://static9.depositphotos.com/1007566/1177/v/450/depositphotos_11771181-stock-illustration-medical-symbol.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat:no-repeat ;
-    justify-content: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
-.titulo{
-
-    width: 6;
+.tit1 {
+    text-align: center;
+    font-size: 2rem; 
+    margin: 0;
+    color: white;
 }
 
+.navbar {
+    width: auto;
+    height: 10vh; 
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-.fondo{
+.home {
+    text-decoration: none;
+    font-size: 1.5rem; 
+    background-color: #002bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid #002bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home:hover {
+    background-color: #0047ff;
+    border-color: #0047ff;
+}
+
+.fondo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    max-width: 400px; 
     background: rgba(0, 255, 255, 0.7);
-    border: 3px solid transparent; 
-    box-shadow: 0 0 10px aqua; 
-    
-    
+    border: 3px solid transparent;
+    box-shadow: 0 0 10px aqua;
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
-.fondo h1{
+.fondo h1 {
     text-align: center;
-    padding: 0 0 20px 0;
+    padding-bottom: 20px;
     border-bottom: 1px solid;
+    font-size: 2rem; 
 }
 
-.fondo form{
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-form .username{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
+.fondo form {
+    padding: 0;
+    margin: 0;
 }
 
-.username input{
+.username,
+.contrasena {
+    margin: 20px 0;
+}
+
+.username input,
+.contrasena input {
     width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 1rem; 
     border: none;
     background: none;
+    border-bottom: 2px solid white;
     outline: none;
 }
 
-.username label{
-
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translate(-50%);
-    font-size: 16px;
-    pointer-events: none ;
+.username label,
+.contrasena label {
+    font-size: 1rem; 
+    color: white;
+    pointer-events: none;
+    transition: all 0.3s;
+    margin-bottom: 10px; 
 }
-.user input:focus ~label,
-.user input:focus ~label{
-    top: -5px;
+
+
+.username input:focus ~ label,
+.contrasena input:focus ~ label {
+    top: -20px;
     color: #6c3483;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
 }
 
-.user,.contrasena{
-    top: -5px;
-    color: #6c3483;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+.recordar {
+    text-align: right;
+    font-size: 1rem; 
+    cursor: pointer;
 }
-.botones{
+
+.input-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem; 
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.input-submit:hover {
+    background-color: aqua;
+    border-color: aqua;
+}
+
+.registrarse {
+    text-align: center;
+    font-size: 1rem; 
+    margin-top: 20px;
+}
+
+.registrarse a {
+    color: blue;
     text-decoration: none;
-    color: green;
-    padding: 10px 20px;
-    border-radius: 50%;
-    background-color:white;
-    transition: box-shadow 0.3s ease;
-    
+    transition: color 0.3s;
 }
 
-.botones:hover {
-    box-shadow: 0 0 10px 3px rgba(0, 0, 255, 0.5); /* Agrega una sombra para simular el brillo */
+.registrarse a:hover {
+    color: navy;
 }
-
-.aside{
-    top: 500px;
-}
-input{
-    display: inline-block;
-    padding: 15px 30px;
-    color: greenyellow;
-    letter-spacing: 4px;
-    font-size: 15px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-  }
-   
-  input:hover{
-    background: aqua;
-    box-shadow:0 0 10px #04dff3,0 0 9px #04dff3,0 0 10px #04dff3;
-    transition-delay: 0.3s ;
-  }

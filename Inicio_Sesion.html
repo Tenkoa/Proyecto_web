@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,49 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo_iniciar_sesion.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
-
-
-    
 </head>
 <body> 
     
-    <header >
-
-
-        <a href="index.html" class="botones">Home</a>
+    <header>
+        <div class="navbar">
+            <a class="home" href="index.html">Home</a>
+            <p class="tit1">MedUnity</p>
+        </div>
     </header>
     
     <div class="fondo">
-        <h1 class="titulo">iniciar sesion</h1>
-       
-       
-       
-       
-       
-       
+        <h1 class="titulo">Iniciar Sesión</h1>
         <form action="perfil.html" method="GET">
-            <div class="user">
-                <input type="text" name="usuario" required placeholder="nombre de usuario">
+            <div class="username">
+                <input type="text" name="usuario" required placeholder="Nombre de Usuario">
+                <label>Nombre de Usuario</label>
             </div>
             <div class="contrasena">
-                <input type="password" name="contraseña" required placeholder="contraseña" pattern=".*[@].*" title="La contraseña debe contener el carácter especial '@'">
+                <input type="password" name="contraseña" required placeholder="Contraseña" pattern=".*[@].*" title="La contraseña debe contener el carácter especial '@'">
+                <label>Contraseña</label>
             </div>
-            <div class="recordar">Olvido su Contraseña</div>
+            <div class="recordar">¿Olvidó su Contraseña?</div>
             <input type="submit" value="Iniciar Sesión">
-            <div class="Registrarse">
-                Quiero hacer el <a href="registro_usuario.html">registro</a>
+            <div class="registrarse">
+                ¿Quieres hacer el <a href="registro_usuario.html">registro</a>?
             </div>
         </form>
-            
-
     </div>
-    
 
 </body> 
 </html>
-
-
-
-</body> 
-</html>
-
